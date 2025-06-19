@@ -4,8 +4,9 @@ import { expressMiddleware } from '@apollo/server/express4';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import http from 'http';
-import { typeDefs } from './src/typeDefs';
-import { resolvers } from './src/resolvers';
+import typeDefs from './typeDefs/index.js';
+import resolvers from './resolvers/index.js';
+
 
 const PORT = process.env.PORT || 3001;
 

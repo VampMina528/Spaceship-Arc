@@ -4,7 +4,7 @@
   "type": "module",
   "main": "server.ts",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only server.ts"
+    "dev": "node --loader ts-node/esm src/server.ts"
   },
   "dependencies": {
     "@apollo/server": "^4.8.1",
@@ -14,6 +14,8 @@
     "graphql": "^16.7.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.3"
   }

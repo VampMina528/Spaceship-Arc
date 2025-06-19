@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2021",
+    "target": "ES2022",
     "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
+    "strict": true,
+    "resolveJsonModule": true,
     "outDir": "dist",
-    "resolveJsonModule": true
+    "baseUrl": "./"
   },
-  "include": ["src", "server.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"]
 }
